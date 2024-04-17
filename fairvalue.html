@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Marketing Simulation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/stylevalue.css">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Louitos</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="#">Maket Sims</a>
+										<ul>
+											<li><a href="prices_sim.html">Prices simulation</a></li>
+											<li><a href="articles_sim.html">Articles Simulation</a></li>
+                                            <li><a href="CDSpartner_sim.html">CDS/Partner Simulation</a></li>
+										</ul>
+									</li>
+									<li><a href="cirque_case.html">Cirque du soleil</a></li>
+									<li class="break"><a href="starbucks_case.html">Starbucks case</a></li>
+									<li><a href="calculus.html">Calculus Details</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+        <div class="containersim">
+            <div class="dropdown">
+                <h1 class="sim">Stock Fair Value</h1> <br>
+            </div>
+            <!-- Première ligne avec deux champs -->
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="data3">Value of the company</label>
+                    <input type="number" id="data3" name="Value of the company">
+                </div>
+                <div class="input-group">
+                    <label for="data4">Number of Shares</label>
+                    <input type="number" id="data4" name="Number of Shares">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="data5">FCF (% of the value of the company)</label>
+                    <input type="number" id="data5" name="Change in working capital">
+                </div>
+                <div class="input-group">
+                    <label for="data6">Growth rate of the company (%)</label>
+                    <input type="number" id="data6" name="growth rate of the world economy">
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="data7">W ACC</label>
+                    <input type="number" id="data7" name="WACC">
+                </div>
+                <div class="input-group">
+                    <label for="data8">Number of years of the forecast</label>
+                    <input type="number" id="data8" name="number of years of the forecast">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="data9">Net Debt</label>
+                    <input type="number" id="data9" name="Net Debt">
+                </div>
+            </div>
+        </div>
+
+        <div id="erreur" style="color: red; display: none;"></div>
+
+        <div class="input-groups">
+            <button onclick="effectuerCalculs()">Simuler</button>
+        </div>
+
+        <div class="result">
+            <!-- Emplacements pour les 16 résultats -->
+            <div class="resultats">
+                <p id="resultat1">Flux de trésorerie libre (FCF) actuel : </p>
+                <p id="resultat2">Valeur résiduelle : </p>
+                <p id="resultat3">Valeur présente nette (VPN) : </p>
+                <p id="resultat4">Valeur de l'équité : </p>
+                <p id="resultat5">Valeur par action : </p>
+                <!-- Ajoutez plus de paragraphes pour les résultats jusqu'à resultat(n) -->
+            </div>
+        </div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+        <script src="assets/js/scriptvalue.js"></script>
+	</body>
+</html>

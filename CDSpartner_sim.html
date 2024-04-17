@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Marketing Simulation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/styleCDS.css">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Louitos</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="#">Maket Sims</a>
+										<ul>
+											<li><a href="prices_sim.html">Prices simulation</a></li>
+											<li><a href="articles_sim.html">Articles Simulation</a></li>
+                                            <li><a href="CDSpartner_sim.html">CDS/Partner Simulation</a></li>
+										</ul>
+									</li>
+									<li><a href="cirque_case.html">Cirque du soleil</a></li>
+									<li class="break"><a href="starbucks_case.html">Starbucks case</a></li>
+									<li><a href="calculus.html">Calculus Details</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+    <div class="containersim">
+        <div class="dropdown">
+            <h1 class="sim">Cirque du soleil CA</h1> <br>
+        </div>
+        <!-- Première ligne -->
+            <label id="cat">number of catégories : </label>
+            <select id="nombreDeLignes">
+                <option class="selectx" value="1" selected>1</option>
+                <option class="selectx" value="2">2</option>
+                <option class="selectx" value="3">3</option>
+                <option class="selectx" value="4">4</option>
+                <option class="selectx" value="5">5</option>
+                <option class="selectx" value="6">6</option>
+                <option class="selectx" value="7">7</option>
+            </select>
+        <div id="conteneurLignes">
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="data1">Number of places per catagories</label>
+                    <input type="number" id="data1" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label for="data2">Occupation rate %</label>
+                    <input type="number" id="data2" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label for="data3">Peak period Price</label>
+                    <input type="number" id="data3" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label for="data4">Off-peak period Price</label>
+                    <input type="number" id="data4" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label for="data5">Number of shows Peak period</label>
+                    <input type="number" id="data5" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label for="data6">Number of shows Off-peak period</label>
+                    <input type="number" id="data6" name="Hourly Rate Salary">
+                </div>
+            </div>
+        
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data11">2 Number of places</label>
+                    <input type="number" id="data11" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data12">2 Occupation rate %</label>
+                    <input type="number" id="data12" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data13">2 Peak Price</label>
+                    <input type="number" id="data13" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data14">2 Off-peak Price</label>
+                    <input type="number" id="data14" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data15">2 Number spec peak</label>
+                    <input type="number" id="data15" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data16">2 Number spec off-peak</label>
+                    <input type="number" id="data16" name="Hourly Rate Salary">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data21">3 Number of places</label>
+                    <input type="number" id="data21" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data22">3 Occupation rate %</label>
+                    <input type="number" id="data22" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data23">3 Peak Price</label>
+                    <input type="number" id="data23" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data24">3 Off-peak Price</label>
+                    <input type="number" id="data24" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data25">3 Number spec peak</label>
+                    <input type="number" id="data25" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data26">3 Number spec off-peak</label>
+                    <input type="number" id="data26" name="Hourly Rate Salary">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data31">4 Number of places</label>
+                    <input type="number" id="data31" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data32">4 Occupation rate %</label>
+                    <input type="number" id="data32" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data33">4 Peak Price</label>
+                    <input type="number" id="data33" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data34">4 Off-peak Price</label>
+                    <input type="number" id="data34" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data35">4 Number spec peak</label>
+                    <input type="number" id="data35" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data36">4 Number spec off-peak</label>
+                    <input type="number" id="data36" name="Hourly Rate Salary">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data41">5 Number of places</label>
+                    <input type="number" id="data41" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data42">5 Occupation rate %</label>
+                    <input type="number" id="data42" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data43">5 Peak Price</label>
+                    <input type="number" id="data43" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data44">5 Off-peak Price</label>
+                    <input type="number" id="data44" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data45">5 Number spec peak</label>
+                    <input type="number" id="data45" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data46">5 Number spec off-peak</label>
+                    <input type="number" id="data46" name="Hourly Rate Salary">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data51">6 Number of places</label>
+                    <input type="number" id="data51" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data52">6 Occupation rate %</label>
+                    <input type="number" id="data52" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data53">6 Peak Price</label>
+                    <input type="number" id="data53" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data54">6 Off-peak Price</label>
+                    <input type="number" id="data54" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data55">6 Number spec peak</label>
+                    <input type="number" id="data55" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data56">6 Number spec off-peak</label>
+                    <input type="number" id="data56" name="Hourly Rate Salary">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data61">7 Number of places</label>
+                    <input type="number" id="data61" name="Number of articles">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data62">7 Occupation rate %</label>
+                    <input type="number" id="data62" name="Fixed Costs">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data63">7 Peak Price</label>
+                    <input type="number" id="data63" name="Variable Costs (100%)">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data64">7 Off-peak Price</label>
+                    <input type="number" id="data64" name="Production capacity & Effective Sales">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data65">7 Number spec peak</label>
+                    <input type="number" id="data65" name="Total Salary Cost">
+                </div>
+                <div class="input-group">
+                    <label class="texte-pour-telephone" for="data66">7 Number spec off-peak</label>
+                    <input type="number" id="data66" name="Hourly Rate Salary">
+                </div>
+            </div>
+
+            <div class="finals">
+                <div class="finalinput-row">
+                    <div class="finput-group">
+                        <label class="final" for="data71">Fixed Cost of CDS without rental fees</label>
+                        <input type="number" id="data71" name="Number of articles">
+                    </div>
+                    <div class="finput-group">
+                        <label class="final" for="data76">Rental fees of CDS</label>
+                        <input type="number" id="data76" name="Hourly Rate Salary">
+                    </div>
+                </div>
+
+                <div class="finalinput-row">
+                    <div class="finput-group">
+                        <label class="final" for="data73">Number of tourist on the area</label>
+                        <input type="number" id="data73" name="Variable Costs (100%)">
+                    </div>
+                    <div class="finput-group">
+                        <label class="final" for="data74">Investment of Cirque du soleil</label>
+                        <input type="number" id="data74" name="Production capacity & Effective Sales">
+                    </div>
+                </div>
+
+                <div class="finalinput-row">
+                    <div class="finput-group">
+                        <label class="final" for="data75">Investment of partner</label>
+                        <input type="number" id="data75" name="Total Salary Cost">
+                    </div>
+                    <div class="finput-group">
+                        <label class="final" for="data72">Variable cost in % of turn-over</label>
+                        <input type="number" id="data72" name="Fixed Costs">
+                    </div>
+                </div>
+
+                <div class="finalinput-row">
+                    <div class="finput-group">
+                        <label class="final" for="data81">Taxes (IS) (%)</label>
+                        <input type="number" id="data81" name="Number of articles">
+                    </div>
+                    <div class="finput-group">
+                        <label class="final" for="data82">General Taxes (TVA for exemple) (%)</label>
+                        <input type="number" id="data82" name="Fixed Costs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="input-groups">
+            <button onclick="effectuerCalculs()">Simuler</button>
+        </div>
+
+    <div class="result">
+        <!-- Emplacements pour les 16 résultats -->
+        <div class="resultats">
+            <p id="resultat1">Number of clients Peak period : </p>
+            <p id="resultat2">Number of clients off-Peak period : </p>
+            <p id="resultat3">Penetration Rate : </p>
+            <p id="resultat4">Turn-over TTC : </p>
+            <p id="resultat5">Turn-over HT : </p>
+            <p id="resultat6">Fixed cost : </p>
+            <p id="resultat7">Variable cost : </p>
+            <p id="resultat8">Operating income (REx) : </p>
+            <p id="resultat11">Taxes (IS) : </p>
+            <p id="resultat12">Net income : </p>
+            <br>
+            <p id="resultat13">Share of net income of CDS : </p>
+            <p id="resultat14">% Share of net income of CDS : </p>
+            <p id="resultat15">ROIC of CDS : </p>
+            <br>
+            <p id="resultat16">Share of net income of partner : </p>
+            <p id="resultat17">% Share of net income of partner : </p>
+            <p id="resultat18">ROIC of partner : </p>
+            <!-- Ajoutez plus de paragraphes pour les résultats jusqu'à resultat(n) -->
+        </div>
+    </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/scriptCDS.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

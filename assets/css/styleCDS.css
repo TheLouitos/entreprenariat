@@ -1,0 +1,218 @@
+:root {
+  /* Définition des variables CSS */
+  --font-family-main: 'Montserrat', sans-serif;
+  --text-color: #333;
+  --input-border-radius: 5px;
+  --input-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  --button-hover-color: #f35858;
+  --border-color: #cccccc;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box; /* Applique box-sizing à tous les éléments */
+}
+
+.containersim, .resultats, a.lonk {
+  margin: auto;
+  width: 90%;
+}
+
+.containersim {
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+
+h1.sim, .resultats, a.lonk {
+  font-family: var(--font-family-main);
+  text-align: center;
+  color: var(--text-color);
+}
+
+h1.sim {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.resultats {
+  margin-top: 50px;
+  padding: 10px;
+  box-shadow: var(--input-box-shadow);
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+a.lonk {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-row, .finalinput-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-content: flex-end; /* Pousse les éléments vers le bas */
+  width: 100%; /* Assurez-vous que le conteneur prend toute la largeur */
+  height: 100%; /* Assurez-vous que le conteneur prend toute la hauteur disponible */
+  /* Vous devrez peut-être ajuster la hauteur en fonction de votre mise en page spécifique */
+}
+
+.input-group {
+  /* Ajustement pour les grands écrans, assurez-vous que cela ne force pas les éléments à s'afficher en colonne */
+  flex: 0 1 calc(16.666% - 20px); /* Exemple pour trois éléments par ligne avec des marges */
+  margin: 10px; /* Marges pour un peu d'espace autour */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.texte-pour-telephone {
+  display: none;
+}
+
+@media (min-width: 786px) {
+  .input-group {
+    flex: 0 1 calc(16.666% - 20px); /* Prend 16.666% de l'espace disponible, moins 20px pour la marge */
+    margin: 10px; /* Ajoute un peu d'espace autour des éléments */
+    display: flex; /* Garde flex ici pour le contenu interne de .input-group */
+    flex-direction: column; /* Garde la direction de colonne pour l'alignement interne */
+  }
+
+  /* Vous pourriez avoir besoin d'ajuster le sélecteur pour les .input-group qui ne doivent pas avoir de marge à droite */
+  .input-group:nth-child(3n) {
+    margin-right: 10px;
+  }
+}
+
+
+@media (max-width: 786px) {
+  .input-row, .finalinput-row {
+    justify-content: flex-start; /* Aligner les éléments au début, si vous voulez qu'ils commencent à gauche */
+    align-content: stretch; /* Étirer les éléments enfants pour remplir le conteneur si nécessaire */
+  }
+
+  .input-group {
+    flex: 0 1 100%; /* Chaque .input-group prendra toute la largeur disponible */
+    margin: 10px 0; /* Ajoute de l'espace uniquement en haut et en bas pour les séparer verticalement */
+  }
+
+  .texte-pour-telephone {
+    display: grid;
+  }
+}
+
+
+input[type="button"], input[type="submit"], input[type="reset"], button, .butt {
+  margin-top: 30px;
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+  background: none;
+  text-decoration: none;
+  border: solid 1px #c2c7cc;
+  border-radius: 0.35em;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  outline: 0;
+  width: 80%;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .butt:hover {
+  color: var(--button-hover-color);
+  border-color: rgba(243, 88, 88, 0.5);
+}
+
+input[type="number"] {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: var(--input-border-radius);
+  font-size: 14px;
+  box-shadow: var(--input-box-shadow);
+  width: 100%;
+}
+
+#resultat5, #resultat12, #resultat14, #resultat15, #resultat17, #resultat18 {
+  font-weight: bold;
+}
+
+label.final {
+  color: red;
+  margin-right: 0px;
+}
+
+@media (min-width: 1284px) {
+  label {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+
+@media (min-width: 785.99px){
+  label {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+#cat {
+  font-size: 20px;
+}
+
+#nombreDeLignes {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.finalinput-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 0px); /* Ajustement pour la marge ajoutée */
+}
+
+
+.finput-group {
+  width: calc(45%);
+  color: #333333;
+  border-radius: var(--input-border-radius);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.finals {
+  background-color: #f9f9f9;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+@media (max-width: 838px) {
+  .finalinput-row,
+  .finput-group {
+    display: block; /* Les inputs s'afficheront en blocs pleine largeur */
+    width: 100%; /* Les inputs prennent la pleine largeur */
+    margin-left: 0; /* Annule la marge latérale */
+    margin-top: 0;
+    margin-top: 10px;
+  }
+  .finals {
+    background-color: #f9f9f9;
+    box-shadow: none;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+}

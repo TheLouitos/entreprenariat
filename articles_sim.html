@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Marketing Simulation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style_people.css">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Louitos</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="#">Maket Sims</a>
+										<ul>
+											<li><a href="prices_sim.html">Prices Simulation</a></li>
+											<li><a href="articles_sim.html">Articles Simulation</a></li>
+                                            <li><a href="CDSpartner_sim.html">CDS/Partner Simulation</a></li>
+										</ul>
+									</li>
+									<li><a href="cirque_case.html">Cirque du soleil</a></li>
+									<li class="break"><a href="starbucks_case.html">Starbucks case</a></li>
+									<li><a href="calculus.html">Calculus Details</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+                <div class="containersim">
+                    <div class="dropdown">
+                        <h1 class="sim">Simulation people to fire / number of article to sell</h1>
+                    </div>
+                    <!-- Première ligne avec deux champs -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data1">Number of articles</label>
+                            <input type="number" id="data1" name="Number of articles">
+                        </div>
+                        <div class="input-group">
+                            <label for="data2">Fixed Costs</label>
+                            <input type="number" id="data2" name="Fixed Costs">
+                        </div>
+                    </div>
+
+                    <!-- Deuxième ligne avec deux champs -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data3">Variable Costs (100%)</label>
+                            <input type="number" id="data3" name="Variable Costs (100%)">
+                        </div>
+                        <div class="input-group">
+                            <label for="data4">Production capacity & Effective Sales</label>
+                            <input type="number" id="data4" name="Production capacity & Effective Sales">
+                        </div>
+                    </div>
+
+                    <!-- Répétez ce motif pour les autres lignes -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data5">Total Salary Cost</label>
+                            <input type="number" id="data5" name="Total Salary Cost">
+                        </div>
+                        <div class="input-group">
+                            <label for="data6">Hourly Rate Salary</label>
+                            <input type="number" id="data6" name="Hourly Rate Salary">
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data7">Number of hours per week (salary)</label>
+                            <input type="number" id="data7" name="Number of hours per week (salary)">
+                        </div>
+                        <div class="input-group">
+                            <label for="data8">Number of week of work (salary)</label>
+                            <input type="number" id="data8" name="Number of week of work (salary)">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data9">Number of people (salary)</label>
+                            <input type="number" id="data9" name="Number of people (salary)">
+                        </div>
+                        <div class="input-group">
+                            <label for="data10">MSRP or Selling Price With Tax To Consumer (PVCC TTC)</label>
+                            <input type="number" id="data10" name="MSRP or Selling Price With Tax To Consumer (PVCC TTC)">
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data11">Sale + Local Taxes</label>
+                            <input type="number" id="data11" name="Sale + Local Taxes">
+                        </div>
+                        <div class="input-group">
+                            <label for="data12">Profit Margin of Reseller</label>
+                            <input type="number" id="data12" name="Profit Margin of Reseller">
+                        </div>
+                    </div>
+
+                    <!-- Dernière ligne avec un seul champ (si c'est ce que vous souhaitez) -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="data13">Optional Financial Incentive of Reseller (Avantage financier)</label>
+                            <input type="number" id="data13" name="Optional Financial Incentive of Reseller (Avantage financier)">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-groups">
+                    <button class="buttt" onclick="effectuerCalculs()">Simuler</button>
+                </div>
+    
+    <div class="result">
+        <!-- Emplacements pour les 16 résultats -->
+        <div class="resultats">
+            <p id="resultat1">Unitary Variable Cost : </p>
+            <p id="resultat2">Turn over (CA): </p>
+            <p id="resultat3">Real Variable Cost (Production setting): </p>
+            <p id="resultat4">Turn over - Fixed Cost: </p>
+            <p id="resultat5">Price (HT): </p>
+            <p id="resultat6">Result: </p>
+            <p id="resultat7">Result (%): </p>
+            <p id="resultat8">Selling Prices Without Tax To Consumer (PVC HT): </p>
+            <p id="resultat9">Number article (seuil de renta): </p>
+            <p id="resultat10">Number article (seuil de renta) (%): </p>
+            <p id="resultat11">∆ Total Salary Cost: </p>
+            <p id="resultat12">Result salary expense: </p>
+            <p id="resultat13">Reduction of people (fire): </p>
+            <!-- Ajoutez plus de paragraphes pour les résultats jusqu'à resultat(n) -->
+        </div>
+    </div>
+
+		<!-- Scripts -->
+            <script src="assets/js/script_people.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

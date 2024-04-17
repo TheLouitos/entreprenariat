@@ -1,0 +1,180 @@
+.containersim {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 40px;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  border-radius: 20px;
+}
+
+h1.sim {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  width: calc(100% - 0px); /* Ajustement pour la marge ajoutée */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: calc(50% - 0px); /* Ajustement pour la marge ajoutée */
+  margin-right: 0;
+}
+
+/* Styles pour les labels et inputs restent inchangés */
+
+/* Media queries pour écrans plus larges (tablettes et ordinateurs) */
+@media (min-width: 768px) {
+  .input-row {
+    justify-content: space-between;
+    margin-left: 0; /* Annule la marge pour les écrans plus grands */
+    margin-right: 0;
+  }
+
+  .input-group {
+    width: calc(50% - 0px); /* Réajustement pour les écrans plus larges */
+    margin-top: 0;
+  }
+
+  .input-group:nth-child(2n) {
+    margin-right: 0px; /* Espace entre les inputs sur la même ligne */
+  }
+
+  .input-group:nth-child(2n+1) {
+    margin-right: 0;
+  }
+}
+
+/* Media queries pour écrans de téléphone (inférieurs à 768px) */
+@media (max-width: 767px) {
+  .input-row,
+  .input-group {
+    display: block; /* Les inputs s'afficheront en blocs pleine largeur */
+    width: 100%; /* Les inputs prennent la pleine largeur */
+    margin-left: 0; /* Annule la marge latérale */
+    margin-top: 0;
+  }
+
+  .input-group {
+    width: 100%; /* Pleine largeur pour les inputs */
+    margin-bottom: 20px; /* Espace entre les inputs */
+  }
+}
+
+/* Styles pour .resultats, #resultat13, #resultat9, #resultat10, a.lonk, et les boutons restent inchangés */
+
+label {
+  margin-bottom: 5px; /* Espace entre le label et l'input */
+}
+
+input[type="number"] {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  /* autres styles */
+  margin-bottom: 10px; /* Espace au-dessous de chaque input pour les séparer verticalement */
+  background-color: #f9f9f9;
+  color: #333333;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%; /* L'input prend toute la largeur disponible */
+}
+
+/* Assurez-vous que le dernier input de chaque groupe n'a pas de marge en bas pour maintenir l'espacement uniforme */
+.input-group:last-child input[type="number"] {
+  margin-bottom: 0;
+}
+
+/* Autres styles restent inchangés */
+
+/* Ajouter une marge à droite pour le deuxième input de chaque ligne pour les écrans plus larges */
+@media (min-width: 768px) {
+  .input-group:nth-child(2n) input[type="number"] {
+    margin-right: 20px; /* Espace entre les inputs sur la même ligne */
+  }
+}
+
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.butt {
+  margin-top: 40px;
+  transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  display: block; /* Changez 'inline-block' par 'block' */
+  margin-left: auto; /* Ajoutez cela pour centrer le bouton */
+  margin-right: auto; /* Ajoutez cela pour centrer le bouton */
+  color: inherit;
+  background: none;
+  text-decoration: none;
+  border: solid 1px #c2c7cc;
+  border-radius: 0.35em;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  outline: 0;
+  width: 80%;
+  /* Supprimez la propriété 'width: 100%;' si vous ne voulez pas que le bouton s'étende sur toute la largeur */
+}
+
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:hover,
+    .butt:hover {
+      color: #f35858;
+      border-color: rgba(243, 88, 88, 0.5);
+    }
+
+.resultats {
+  font-family: 'Montserrat', sans-serif; /* ou 'Montserrat', comme dans le reste de votre design */
+  font-size: 16px; /* ajustez la taille de la police à votre préférence */
+  color: #333; /* une couleur de texte standard */
+  margin-bottom: 50px; /* ajoute un peu d'espace sous chaque résultat */
+  padding: 0px 0; /* ajoute un peu d'espace au-dessus et en dessous du texte du résultat */
+  border-bottom: 1px solid #ccc; /* une ligne sous le résultat pour le séparer visuellement */
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resultat13 {
+  font-weight: bold;
+}
+
+#resultat9 {
+  font-weight: bold;
+}
+
+#resultat10 {
+  font-weight: bold;
+}
+
+a.lonk {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  width: 80%;
+  font-weight: bold;
+  color: #333;
+}
